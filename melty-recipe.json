@@ -1,0 +1,23 @@
+{
+  "name": "Hades II x StS2 Crosslink",
+  "id": "hades2-sts2-crosslink",
+  "version": "1.0.0",
+  "description": "Integrates real Slay the Spire 2 cards, relics, and mechanics into Hades II.",
+  "author": "firey-frost",
+  "hosts": {
+    "primary": {
+      "catalog_id": "hades-2",
+      "required": true
+    },
+    "secondary": {
+      "catalog_id": "slay-the-spire-2",
+      "required": false,
+      "notice": "Slay the Spire 2 must be installed to load cards and relics."
+    }
+  },
+  "install": {
+    "target": "primary",
+    "extract_to": "{GAME_ROOT}",
+    "download_url": "https://github.com/firey-frost/hades2-sts2-crosslink/releases/latest/download/hades2-sts2-crosslink.zip"
+  }
+}
